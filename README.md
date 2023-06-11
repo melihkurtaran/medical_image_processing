@@ -14,6 +14,18 @@ This repository focuses on DICOM image visualization and coregistration for medi
 
 - `medical_imaging_project.ipynb`: This Jupyter Notebook file contains the main code for the entire project.
 
+## Objectives
+
+### 1) DICOM Loading and Visualization
+
+- Load the HCC_007 segmentation and CT images using PyDicom. Analyzing the headers of both images to extract relevant information. Reslicing the segmentation image based on the DICOM headers. Creating a segmentation image with the the tumor region.
+- Generating Maximum Intensity Projections, Applying alpha fusion to enhance image and region visibility, Creating an animation showcasing at 64 projections.
+
+### 2) 3D Rigid Coregistration
+
+- ImplementING a rigid motion model for image coregistration using landmarks, evaluating the quality of the coregistration based on MAE and MSE and mutual information.
+- Visualizing the thalamus mask in the input space on various indexes.
+
 ## How to Use
 
 1. Clone the repository to your local machine.
